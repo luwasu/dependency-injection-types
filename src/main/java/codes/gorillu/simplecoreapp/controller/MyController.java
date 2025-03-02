@@ -19,10 +19,6 @@ public class MyController {
         this.greetingService = new GreetingServiceImpl();
     }
 
-/*    public String sayHello() {
-        System.out.println("Hello from inside my controller!");
-        return "Hello everyone";
-    }*/
 
     public String sayHello() {
         System.out.println("Hello from inside my controller!");

@@ -1,10 +1,8 @@
 package codes.gorillu.simplecoreapp.controller;
 
-import codes.gorillu.simplecoreapp.services.GreetingServiceImpl;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 /**
  * Project: simple-core-app
@@ -12,14 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
  * Date: 02.03.2025
  * Time: 14:41
  */
+@SpringBootTest
 class ConstructorInjectedControllerTest {
 
+    @Autowired
     ConstructorInjectedController controller;
-
-    @BeforeEach
-    void setUp() {
-        controller = new ConstructorInjectedController(new GreetingServiceImpl());
-    }
 
     @Test
     void sayHello(){
