@@ -1,6 +1,7 @@
 package codes.gorillu.simplecoreapp.controller;
 
 import codes.gorillu.simplecoreapp.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
 /**
  * Project: simple-core-app
@@ -8,6 +9,7 @@ import codes.gorillu.simplecoreapp.services.GreetingService;
  * Date: 02.03.2025
  * Time: 14:40
  */
+@Controller
 public class ConstructorInjectedController {
 
     private final GreetingService greetingService;
