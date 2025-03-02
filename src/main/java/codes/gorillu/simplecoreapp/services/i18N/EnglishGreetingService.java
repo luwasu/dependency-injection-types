@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * Date: 02.03.2025
  * Time: 20:47
  */
-@Profile("EN")
+@Profile({"EN", "default"})
 @Service("i18NService")
 public class EnglishGreetingService implements GreetingService {
 
